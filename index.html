@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Treat Trials</title>
 </head>
+
 <body>
     <p>Sweet Treat Trials</p>
     <p>under construction</p>
+
+
+
+    <div class="topnav">
+        <a class="active" href="index.html"><img src="Media/favicon.PNG" alt="" width="50">Sweet Treat Trials</a>
+        <a href="posts.html">Posts</a>
+        <a href="about.html">About</a>
+
+
+
+    </div>
+    <br>
+    <div class="desc">
+        <h1>Welcome to Sweet Treat Trials!</h1>
+        <p>Indulge in the world of desserts and confectionery goods as we review and share our thoughts on a wide array
+            of treats. Our blog provides insightful, honest, and mouthwatering reviews to help you make informed
+            choices.</p>
+        <p>Join our community of dessert enthusiasts, explore our blog, and embark on a scrumptious adventure with Sweet
+            Treat Trials!</p>
+        <p>Sweet regards,<br>The Sweet Treat Trials Team</p>
+    </div>
+    <hr>
+    <div class="latest">
+        <h3>Here are some of out latest posts</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="donuts.html"><img src="media/donuts.jpg" alt="" width="300">
+                    <h3>Dive into Donut Delights!</h3>
+                    <p>
+                        Join us on a tantalizing exploration <br>of donuts, from classic glazed wonders to <br>whimsical
+                        creations. Indulge in delightful flavors, <br>mesmerizing textures, and captivating stories. <br>Get
+                        ready for an irresistible sugar rush
+                    </p>
+                </a>
+            </div>
+
+            <div class="grid-item">2</div>
+
+            <div class="grid-item">3</div>
+        </div>
+
+
+
+    </div>
 </body>
+
 </html>
+
+
+
+<style>
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /* everything for the navbar */
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .topnav a.active {
+        background-color: #333;
+        color: white;
+    }
+
+    /* site description */
+    .desc {
+
+        text-align: center;
+        background-color: #ffffc4;
+        border-radius: 10px;
+        border-color: #333;
+        border-style: solid;
+    }
+
+    /* latest 3 posts */
+    .latest {
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #c4c4c4;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto ;
+        column-gap: 50px;
+        padding-bottom: 10px;
+
+    }
+
+    .grid-item {
+        padding: 10px;
+        border-radius: 10px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        transition: 1s;
+    }
+
+    .grid-item a:link, .grid-item a:visited {
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    .grid-item:hover {
+        transform: scale(1.05);
+    }
+</style>
