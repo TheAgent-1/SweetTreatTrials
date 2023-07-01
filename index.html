@@ -40,7 +40,8 @@
                     <h3>Dive into Donut Delights!</h3>
                     <p>
                         Join us on a tantalizing exploration <br>of donuts, from classic glazed wonders to <br>whimsical
-                        creations. Indulge in delightful flavors, <br>mesmerizing textures, and captivating stories. <br>Get
+                        creations. Indulge in delightful flavors, <br>mesmerizing textures, and captivating stories.
+                        <br>Get
                         ready for an irresistible sugar rush
                     </p>
                 </a>
@@ -111,7 +112,7 @@
 
     .grid-container {
         display: inline-grid;
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto auto;
         column-gap: 50px;
         padding-bottom: 10px;
 
@@ -125,13 +126,34 @@
         transition: 1s;
     }
 
-    .grid-item a:link, .grid-item a:visited {
+    .grid-item a:link,
+    .grid-item a:visited {
         text-decoration: none;
         color: black;
-        
+
     }
 
     .grid-item:hover {
         transform: scale(1.05);
+    }
+
+
+
+
+    @media only screen and (max-width: 600px) {
+        .grid-container {
+            display: inline-grid;
+            grid-template-columns: auto;
+            row-gap: 30px;
+        }
+
+        .grid-item {
+        padding: 3px;
+        border-radius: 10px;
+        border-color: #c4c4c4;
+        border-style: solid;
+        transition: 1s;
+        
+    }
     }
 </style>
